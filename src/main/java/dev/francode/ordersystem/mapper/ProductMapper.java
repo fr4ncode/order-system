@@ -11,7 +11,7 @@ public interface ProductMapper {
     Product toEntity(ProductRequest request);
 
     @Mapping(source = "category.name", target = "categoryName")
-    @Mapping(target = "storeName", constant = "Hotel Formula 1")
+    @Mapping(target = "storeName", constant = "Hotel_Formula_1")
     ProductResponse toResponse(Product product);
 
 }
