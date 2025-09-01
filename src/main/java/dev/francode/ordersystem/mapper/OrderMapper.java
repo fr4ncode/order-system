@@ -13,6 +13,7 @@ public interface OrderMapper {
     OrderResponse toOrderResponse(Order order);
 
     @Mapping(source = "product.name", target = "productName")
+    @Mapping(source = "subTotal", target = "subtotal")
     OrderDetailsResponse toOrderDetailsResponse(OrderDetails orderProduct);
 
     @Named("statusToString")
