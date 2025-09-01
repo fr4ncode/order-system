@@ -22,5 +22,5 @@ public class ProductResponse {
     private String brandName;
     private String categoryName;
     private String storeName;
-    private List<ImageResponse> images;
+    private List<String> images;
 }
